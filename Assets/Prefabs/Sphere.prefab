@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2549442403418262014}
   - component: {fileID: 5451374608697401713}
   - component: {fileID: 6392143465489603020}
+  - component: {fileID: 9205264517253298198}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -294,3 +295,16 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &9205264517253298198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862870201049041626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e43c6f3d23a044396def795d85967e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FreezeBall
+  glowColor: {r: 2, g: 2, b: 2, a: 2}

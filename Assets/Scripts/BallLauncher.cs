@@ -29,6 +29,21 @@ public class BallLauncher : MonoBehaviour
         // 3. Lui donner une impulsion vers l'avant (Vector3.forward par rapport au launchPoint)
         rb.AddForce(launchPoint.forward * throwForce, ForceMode.Impulse);
 
+        Color randomColor = Random.ColorHSV(0f, 1f, 0.8f, 1f, 0.8f, 1f);
+        
+        MeshRenderer ballMesh = ball.GetComponent<MeshRenderer>();
+
+        // On change la couleur de base
+        ballMesh.material.SetColor("_BaseColor", randomColor);
+        
+        // Optionnel : Si tu veux qu'elle brille de la même couleur au freeze plus tard
+        // On peut stocker cette couleur dans le script FreezeBall de la nouvelle balle
+        FreezeBall freezeScript = ball.GetComponent<FreezeBall>();
+        if (freezeScript != null)
+        {
+            freezeScript.glowColor = randomColor * 6.0f; // On prépare la brillance HDR
+        }
+
         // 4. Optionnel : Détruire la balle après 5 secondes pour ne pas ralentir le jeu
         // Destroy(ball, 5f);
     }
