@@ -1,0 +1,37 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Fichiers de solution Visual Studio
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Fichiers de crash et rapports
+sysinfo.txt
+crashlytics-build.properties
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
+
+# Dossier de builds Android (APK)
+*.apk
+*.aab
+
+# Dossiers créés par XR Plugin (parfois problématiques au build)
+/[Aa]ssets/[Xx][Rr]/[Tt]emp/
